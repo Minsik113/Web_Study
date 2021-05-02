@@ -1,0 +1,33 @@
+●
+태그 <tag> ~~</tag>
+
+● prettier
+prettier를 사용해주면 편하다
+setting -> Editor: format on save부분을 체크해준다.
+
+● List
+1. 순서가 없는 리스트 <ul></ul> 
+ul에 바로 써주는게 아니라 리스트아이템이라는 것을 브라우저에게 알려줘야한다
+<li>을 써줘야함
+ex) 
+<ul>
+    <li>김치</li>
+    <li>감자</li>
+</ul>
+
+2. 순서가 있는 리스트 <ol></ol>
+
+● Anchor <a></a>  = 닻
+: 다른곳으로 이동할 수 있게 한다. 그러므로 이동하고자 하는 링크주소를 추가해줘야 원하는 목적에 맞게 작용한다.
+href(HTTP reference 또는 hyperlink reference)를 함께 사용한다.
+ex)
+<a href="http:google.com">구글</a> 
+<h1 water='fire'></h1>  -- ㄱ
+    ㄱ처럼 작성해도 된다. 하지만 <h1>안에는 water이라는 attribute가 없어서 아무것도 안일어난다.
+    해당 태그가 속성을 가지고있으면 그 기능을 하고 그렇지 않으면 실행만되고 기능을 만들어 주지 않는한 아무일도 없음. html은 이러하다.
+
+● img => self-closing tag <img/>
+
+
+
+

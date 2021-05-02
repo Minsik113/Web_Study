@@ -1,3 +1,6 @@
+● <!DOCTYPE html> 
+: txt파일이 아니라 html문서라고 말해주는 것이다.
+
 ●
 태그 <tag> ~~</tag>
 
@@ -28,6 +31,21 @@ ex)
 
 ● img => self-closing tag <img/>
 
+● head > meta 
+<meta>태그에 대해 알아보자. 딱히 페이지에는 눈에 안들어오는 태그들이지만 여러가지 기능이 있다.
+name과 content라는 속성이 있음
 
+og:image 카카오톡에 url공유할때 보이는 이미지
 
+● 
+html css js를 검색할때 뒤에 mdn을 붙여주자. 그러면 Mozilla develop networdk로 안내래줄것이다.
+=> w3 school말고 mdn사이트 참고하자. 젭라.! 
 
+● 참고사이트
+https://developer.mozilla.org/ko/docs/Web/HTML/Element
+
+● form
+: 매우 중요한 태그 mdn사이트보고 공부
+<input> 
+
+-> 속성을 어떻게 쓰든 상관은없는데 태크게 없는 attribute를 쓰게되면 실행은되지만 기능이 없다.

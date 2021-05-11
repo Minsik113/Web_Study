@@ -58,7 +58,25 @@ for과 함께 쓴다. for의 id와 label의 for의 값을 같게하면 label에 
 <label for="@@">profile</label>
 <input id="@@" type="text"/>
 
+● div
+box라고 생각하자. senantic tag 의미가 없는 태그(div, span).
+하지만, semantic tag로 사용하면 이해하기가 훨씬 쉬워진다. 
+예전엔 div세상이었지만 이제는 아니다.
+구글에 >>>"html element mdn"<<<치면된다.
+(https://developer.mozilla.org/ko/docs/Web/HTML/Element)
 
+● 정리
+HTML - 뼈대
+CSS  - 근육
+JS   - 뇌
+웹사이트가 이해할 수 있게 HTML이라는 언어로 알려줘야한다.
+항상 큰 따옴표를 사용하자.(''도 가능은하나 ""로 습관화하자.)
+
+어떤 attribute는 모두 사용할 수 있고, 일부 attribute는 특정 태그만 사용가능하다.
+
+암기하지말고
+문서살펴보면서 하자. 이러한 태그가 있었다는 점만 기억해주면 된다.
+자주사용하는건 외우면좋겠지. 매커니즘만 이해하고 구글링하자~
 
 
 

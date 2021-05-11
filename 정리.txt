@@ -49,3 +49,16 @@ https://developer.mozilla.org/ko/docs/Web/HTML/Element
 <input> 
 
 -> 속성을 어떻게 쓰든 상관은없는데 태크게 없는 attribute를 쓰게되면 실행은되지만 기능이 없다.
+
+●●● 두 군데를 동시에 입력하려면
+alt 누른 상태에서 원하는 곳에 찍으면 된다.
+
+● label
+for과 함께 쓴다. for의 id와 label의 for의 값을 같게하면 label에 해당하는 것을 누르면 id의값이 같은곳을 실행한다.
+<label for="@@">profile</label>
+<input id="@@" type="text"/>
+
+
+
+
+

@@ -127,33 +127,37 @@ display: inline:;
  너비나 높이가 무시돼서 아무것도 보이지 않음
 display: inline-block;
 
-● flexbox, justfy-content, 
-css flexbox main axis(주축 = 수퍙에 적용) cross axis(교차축 = 수직에적용)
-- flex
-직접적인 부모 자식에게 연결
-- 
-justfy-content = default로 수평에 적용 (main axis)
-align-items = default로 수직에 적용(cross axis)
-    -> 왜 default가 이렇까? flex-direction의 default값이 row라서
+● flex파트는 다른 .txt보자
 
-- vh, px
-height: 100vh; 는 높이를 100%로 한다는 말이다.
- -> 화면이 다른모니터마다 적용 가능하다. px는 안되겠지~~
+● pseudo selectors
+더 세부적으로 엘리먼트를 선택해주는 것이다.
+지금까지 3가지 방법이 있었다.
+1. 태그이름 사용 ex) body{~~} 
+2. 아이디 사용 ex) #green {~~} 해쉬태그사용
+3. 클래스 사용 ex) .tomato {~~} 닷사용
 
-- 주의점
-    1. 자식 엘리먼트에 말하지 않고, 부모 엘리먼트에 말한다.
-    -> 자식들을 움직일거면 부모에게 말하면된다.
-    span에게 적용시킬거면 div에게 말하면 됨.
-    ex)
-        <div>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+4. first-child, last-child, nth-child 등등
+아래와 같이 코드를 짜면 맨아래 div만 배경이 teal로 된다.
+div:last-child{
+    background-color: teal;
+}
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
 
-- flex-direction
-기본값은 row에 적용 column으로 바꾸면 교차축이 수평이됨.
+-> 이렇게 하는게 class나 id로 접근하는거보다 훨~신 효율적이다.
+span:nth-child(2n){ # 2n번째가 배경색이 변함.
+    background-color: teal;
+}
+<body>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+</body>
 
-- flex-wrap
-flex-wrap: warp; 으로 하게되면 chrome창이 줄어들어도 div에 선언한 height와 width가 줄어들지 않고
-아이템들이 다음줄로 넘어간다.

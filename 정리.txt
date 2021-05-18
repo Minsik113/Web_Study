@@ -161,3 +161,25 @@ span:nth-child(2n){ # 2n번째가 배경색이 변함.
     <span>hello</span>
 </body>
 
+● container
+부모 자식 태그를 써서 특정한 위치에 css적용
+- div > span {~~} 는 div바로 아래의 span태그에만 적용
+    => 부모와 바로 밑 자식의 관계
+- div span {~~} 는 div아래 모든 span에 적용
+    => 부모와 자식의 관계
+- p + span {~~} p태그 바로 다음에 오는 span태그에 적용
+    => 형제와 바로 뒤에 오는 형제의 관계
+- p ~ span
+
+    => 형제와 형제 관계. 꼭 바로 뒤에 올 필요는 없다.
+● attribute selector
+input태그 안의 속성이 requred라는 것에 css적용
+input:required{
+    border: 1px solid tomato;
+}
+
+input[type="password"] {
+    background-color: darkorchid;
+}
+ 
+

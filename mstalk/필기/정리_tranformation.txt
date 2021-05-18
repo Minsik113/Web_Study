@@ -1,0 +1,77 @@
+★ Transformation
+말 그대로 변형 하는 것.
+transition이랑 같이 쓰면 멋있는거 많음. MDN transform
+
+★ rotate, 
+ratate는 0~90이며 90으로 하면 안보인다.
+img {
+    border: 5px solid black;
+    border-radius: 50%;
+    transform: rotateY(80deg);
+}
+
+scaleX(4): x로 4배크게
+scalgeXY(2,4): x로 2배 y로 4배
+translateX(-60px): 왼쪽으로 60px 이때 다른애들은 그대로고 이 태그만 이동한다.
+    -> 다른 box element, 이미지를 변형시키지 않는다. margin, padding이 적용되지않음
+    -> 다른 요소의 box를 변형시키지 않고 원하는 요소를 이동시키기 위해서 사용.
+
+이전에 했던 translation처럼 여러개를 조합 할 수 있다.
+img를 선언하고 hover했을 때 Z로 360도 돌리면서 작아지는걸 5초동안 이루어지게 한다.
+img {
+    border: 5px solid black;
+    border-radius: 50%;
+    transition: transform 5s ease-in-out;
+}
+img:hover{
+    transform: rotateZ(360deg) scale(0.5);
+}
+
+★★ 
+이전까지는 hover를 하거나 focus를 하거나 등등 어떤행위를 통해서 transform과 transition을 통해서 변하는 애니메이션 기능을 보았다.
+하지만, 아무것도 없이 애니메이션이 동작하게 어떻게 할까?
+@를 적으면 된다.
+
+supersexycoinflip이라고 저장한 변수를 5s에 걸쳐 실행할 것인데 그게 무한반복 하게 한다.
+@keyframes superSexyCoinFlip{
+    from {
+        transform: rotateZ(0);
+    }
+    to {
+        transform: rotateZ(360deg) translateX(100px);
+    }
+}
+img {
+    border: 5px solid black;
+    border-radius: 50%;
+    animation: superSexyCoinFlip 5s ease-in-out infinite;
+}
+
+★★ https://animista.net/
+위의 코드는 Z축으로 360도를 도는것을 무한반복한다. 
+이떄, 다시 시작위치로 순간이동 하는데 나는 이것조차 애니메이션효과로 돌아오게 하고 싶다면?
+from to 로 해도되고 %로해도된다.
+@keyframes superSexyCoinFlip{
+    0% {
+        transform: rotateY(0);
+    }
+    25% {
+        transform: scale(2);
+    }
+    50% {
+        border-radius: 0px;
+        transform: rotateY(360deg) translateY(100px);
+        border-color: tomato;
+        opacity: 0;
+    }
+    75% {
+        transform: scale(2);
+        border-radius: 20px;
+    }
+    100% {
+        transform: rotateY(0) translateY(0);
+    }
+}
+
+
+

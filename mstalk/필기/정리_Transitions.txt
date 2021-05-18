@@ -1,0 +1,65 @@
+★ transition
+state에 따라 바뀌는 property를 갖고 있으면 사용되는 것이다.
+어떤 속성값을 바꾸고 싶다면 transition을 사용하면 애니메이션으로 볼 수 있다.
+보통 transition:all을 사용해서 모두 적용하게 하지만, 특정한 속성에 대해서만 애니메이션 효과를 주고 싶다면
+해당 속성만 선언해서 하면된다.
+
+★ 
+마우스 올리면 단순히 색이 변한다. 하지만 부드럽게 바뀌지는 않음.
+ -> 이럴 때 transition이라는 속성을 사용함.
+
+a {
+    color:wheat;
+    background-color: tomato;
+    text-decoration: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+a:hover {
+    color: tomato;
+    background-color: wheat;
+}
+
+
+★ transition 속성
+state가 없는 요소에 붙어야 한다. hover가 있는 쪽이 아니라 없는 쪽에 써야한다.
+ex)
+background-color에 변화를 주고싶다면?
+배경색을 10초에 걸쳐서 tomato->wheat로 바꿀것이다. ease-in-out은 일단 그냥 써라.
+배경색이 바뀔때는 10초동안 변화하도록 만들고, 글씨색이 바뀔 때는 5초 동안 변화하도록 만든다.
+a {
+    color:wheat;
+    background-color: tomato;
+    text-decoration: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 70px;
+    transition: background-color 10s ease-in-out, color 5s ease-in-out;
+    transition: all 3s ease-in-out; 을 사용하면 변화하는 모든 속성을 3초동안 애니메이션으로 실행되게 함.
+}
+a:hover {
+    color: tomato;
+    background-color: wheat;
+}
+
+★ transition을 사용할 떄 주의할 점
+1. hover속성을 가진곳에 쓰는 것이 아니라 원래 element에 써야한다.
+2. 변화시키려면 hover와 그것을 가진 element에도 있어야한다
+a {
+    transition: font-size 10s ease-in-out;
+}
+a:hover {
+    font-size: 30px;
+}
+
+★ https://matthewlein.com/tools/ceaser
+여기서 하고싶은 애니메이션 적용하고 코드 복사해서 가져와 쓸 수 있다.
+대부분 ease-in, ease-out, ease-in-out사용
+
+★ 
+뭔가 변하는 state에 모두 적용된다. 
+hover뿐만아니라 focus나 active 등등
+
+★★
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background-color: black;
+            display:flex;
+            width: 100vh;
+            height:100vh;
+            justify-content:center;
+            align-items:center;
+        }
+        main {
+            width: 300px;
+            height: 300px;
+            background-color: #99CCCC;
+        }
+        .content-box {
+            height: 300px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .content-box > div{
+            width: 100px;
+            height: 100px;
+        }
+        .up-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes rotate_target{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            50%{
+                transform: rotateZ(90deg);
+            }
+            100%{
+                transform: rotateZ(180deg);
+            }
+        }
+        .moving-circle {
+            display: flex;
+            justify-content: space-around;
+        }
+        .circle {
+            width:10px;
+            height:10px;
+            border-radius:50%;
+            background-color: white;
+            margin: 4px;
+        }
+        .moving-circle{
+            animation: rotate_target 0.5s linear infinite;
+        }
+        .down-row{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        
+        @keyframes down_css{
+            0%{
+                transform: scaleY(1)
+            }
+            50%{
+                transform: scaleY(2)
+            }
+            70%{
+                transform: scaleY(1)
+            }
+        }
+        .bar1{  
+            width: 10px;
+            height: 30px;
+            margin:3px;
+            background-color:white;
+            animation: down_css 1s ease-in-out infinite;
+        }
+        .sec {
+            animation-delay: 0.1s;
+        }
+        .thr {
+            animation-delay: 0.2s;
+        }
+        .fou {
+            animation-delay: 0.3s;
+        }
+        .fif {
+            animation-delay: 0.4s;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="content-box">
+        <div class="up-row">
+          <div class="moving-circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="down-row">
+          <div class="bar1 fir"></div>
+          <div class="bar1 sec"></div>
+          <div class="bar1 thr"></div>
+          <div class="bar1 fou"></div>
+          <div class="bar1 fif"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

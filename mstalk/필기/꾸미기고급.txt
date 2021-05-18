@@ -1,0 +1,65 @@
+● ::placeholder
+input에 placeholder를 해두었다면 그 placeholder글씨를 yellowgreen으로 바꿔라
+::placeholder를 하지 않으면 input에 쓰는 글씨의 색이 yellowgreen으로 변함
+input::placeholder {
+    color:yellowgreen
+}
+
+
+● ::section
+p태그의 내용을 드래그하면 배경색이 yellowgreen으로 변하고, 글씨는 하얀색으로 변함
+p::selection {
+    background-color: yellowgreen;
+    color:white;
+}
+
+● ::first-letter
+첫 글자만 크고 배경색 있게하기. 
+p::first-letter{
+    font-size: 30px;
+    background-color: yellowgreen;
+}
+
+● 
+p span = 부모 자식 관계
+p > soan = 부모 바로 밑 자식 관계
+p + span = element 바로 다음에 오는 형제 관계
+p ~ span = 꼭 바로 다음에 오지 않아도 되는 관계
+
+● attribute
+input[type="password"] = "password"라는 type을 가진 input만 선택
+input[type~="password"]
+input[type$="password"] = 끝에 오는 경우는 '$'
+input[type^="password"] = 처음에 오는 경우는 '^'
+이런게 있다는 것을 보여주는 것 뿐이다. 
+기억 못 한다고 걱정하미잘고 연습할 때 마다 보자.
+
+● hexadecimal color(16진수 컬러)
+rgb / rgba
+
+rgb로 선언할 수도 있지만 rgba로도 사용할 수 있다.
+a는 글씨의 투명도를 나타낸다 0~1
+0이면 글씨가 안보임
+p {
+    color: rgba(255,238,51,0.99)
+}
+
+● css에서 변수처럼 사용
+:root에 변수처럼 저장해두고 사용한다. 
+변수를 사용하는 이유는 동일한 작업을 반복하지 않으려고.
+dash를 사용해서 함 --@@-@@: ~~;
+:root {
+    --main-color: #489ee3;
+    --default-border: 1px solid var(--main-color);
+}
+
+p {
+    color: #f1ee1f
+}
+p {
+    color:var(--main-color);
+}
+a {
+    color: var(--main-color);
+    border: var(--default-border);
+}

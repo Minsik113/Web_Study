@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,30 +10,33 @@
             height: 1000vh;
             margin: 50px;
         }
-        div {
-            width: 150px;
-            height: 150px;
-            background-color: wheat;
-            position: relative;
-        }
         span {
-            background-color: tomato;
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
         }
-        span:nth-child(2n+6){
-            background-color: teal;
+        input::placeholder {
+            color:yellowgreen
+        }
+        p::selection {
+            background-color: yellowgreen;
+            color:white;
+        }
+        p::first-letter{
+            font-size: 30px;
+            background-color: yellowgreen;
+        }
+        p:hover {
+            
         }
     </style>
 </head>
 <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores natus neque repellendus nemo necessitatibus iusto quas? Fuga, ipsum obcaecati? Illo voluptates earum cupiditate, quo ex sapiente unde recusandae iste nulla.
+    </p>
+    <form>
+        <input type="text" placeholder="name" />
+    </form>
 </body>
 </html>

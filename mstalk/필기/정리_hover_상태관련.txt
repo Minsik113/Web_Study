@@ -1,0 +1,17 @@
+● hover / active 등등의 state
+active - 버튼을 누르고 있을 때 적용 됨
+hover - 마우스 커서가 위에 위치하면 적용됨
+focus - 클릭 한 번 하면 적용됨. 즉 focus 되었을 때
+visited - 클릭했거나 방문한 적이 있는 링크에 적용
+stats 
+focus-within = focus된 자식을 가진 부모 엘리먼트에 적용
+ex) 
+  ★ form이 hover되어있고 그 안에 input이 있을 떄 적용시킨다.
+form:hover input{
+    background-color: blue;
+}
+  ★ form에 마우스 커서가 있고, 그 안에 input태그가 있을 때 그 input태그를 클릭하면 보라색으로 바꿈.
+form:hover input:focus{
+    background-color: blueviolet;
+}
+● ● ● ● ● ● ● ● 

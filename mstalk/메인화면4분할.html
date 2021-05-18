@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0px;
+            background-color: #dde1e7;
+        }
+        h1 {
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 60px;
+        }
+        .main-box {
+            width: 500px;
+            height: 800px;
+            background-color: rgba(0,0,0,0);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .row-box {
+            display: flex;
+            justify-content: space-between;
+            margin:10px;
+        }
+        .color-box {
+            width: 220px;
+            height: 370px;
+            border: 6px solid white;
+            position: relative;
+        }
+        .text-box {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            background-color: white;
+            height: 100px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        span {
+            margin: 13px 5px;
+        }
+        .text-box span:first-child {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .text-box span:last-child {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .row-box:first-child .color-box:first-child {
+            background-color: tomato;
+        }
+        .row-box:first-child .color-box:last-child {
+            background-color: teal;
+        }
+        .row-box:last-child .color-box:first-child {
+            background-color: burlywood;
+        }
+        .row-box:last-child .color-box:last-child {
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Best Colors</h1>
+    <main>
+        <div class="main-box">
+            <div class="row-box">
+                <div class="color-box">
+                    <div class="text-box">
+                        <span>Tomato</span>
+                        <span>#FF6347</span>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="text-box">
+                        <span>Teal</span>
+                        <span>#008080</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row-box">
+                <div class="color-box">
+                    <div class="text-box">
+                        <span>Burlywood</span>
+                        <span>#DEB887</span>
+                    </div>
+                </div>
+                <div class="color-box">
+                    <div class="text-box">
+                        <span>Thistle</span>
+                        <span>#D7BFD7</span>
+                    </div>
+                </div>
+            </div> <!-- Row-Box END-->
+        </div> <!--Main-Box END-->
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:active {
+            background-color: tomato;
+        }
+        button:hover {
+            background-color: tomato;
+        }
+        input:focus {
+            background-color: tomato;
+        }
+
+        a:visited {
+            background-color: blue;
+        }
+        a:hover {
+            color:teal;
+        }
+        a:focus {
+            color: thistle
+        }
+        form {
+            border: 4px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        form:focus-within {
+            border-color: seagreen;
+        }
+        form:hover input{
+            background-color: blue;
+        }
+        form:hover input:focus{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <button>hello</button>
+    <div>
+        <input type="text"/>
+        <input type="text"/>
+    </div>
+    <a href="https://www.naver.com">Go to naver</a>
+    <form>
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+        <input type="text" name="" id="" />
+    </form>
+</body>
+</html>

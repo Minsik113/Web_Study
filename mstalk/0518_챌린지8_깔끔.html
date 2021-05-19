@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        @keyframes coinflip {
+            from {
+                transform: rotateX(0);
+            }
+            to {
+                transform: rotateZ(180deg);
+            }   
+        }
+        @keyframes dominho{
+            0% {
+                transform: scale(1, 1);
+            }
+            50% {
+                transform: scale(1, 1.8);
+            }
+            75% {
+                transform: scale(1, 1);
+            }
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+        .cirmaster{
+            display: flex;
+            flex-direction: row;
+            animation: coinflip 1000ms infinite ease-in-out;
+
+        }
+        .circle {
+            width:10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            margin:20px;
+        }
+        .domaster {
+            margin-top: 200px;
+            display: flex;
+            flex-direction: row;
+        }
+        .dobox {
+            width: 15px;
+            height: 80px;
+            background-color: white;
+            margin:3px;
+            animation: dominho 1000ms infinite ease;
+
+        }
+        #delay1 {
+            animation-delay: 0ms;
+        }
+        #delay2 {
+            animation-delay: 100ms;
+        }
+        #delay3 {
+            animation-delay: 200ms;
+        }
+        #delay4 {
+            animation-delay: 300ms;
+        }
+        #delay5 {
+            animation-delay: 400ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="cirmaster">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="domaster">
+        <div class="dobox" id="delay1"></div>
+        <div class="dobox" id="delay2"></div>
+        <div class="dobox" id="delay3"></div>
+        <div class="dobox" id="delay4"></div>
+        <div class="dobox" id="delay5"></div>
+    </div>
+</body>
+</html>

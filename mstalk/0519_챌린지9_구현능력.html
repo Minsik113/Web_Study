@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>You Are Awesome!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            height: 100vh;
+            width: 100vh;
+            
+          }
+          
+          .content-box{
+            width: 300px;
+            height: 500px;
+            border: 3px solid mediumturquoise;
+            margin:50px;
+          }
+          
+          .status-bar{
+            margin: 25px 0 25px 0;
+            display: flex;
+          }
+          .status-bar i{
+            padding: 0 70px 0 30px;
+          }
+          .status-bar span{
+            font-weight: bold;
+          }
+          
+          .main-bar {
+            display: flex;
+            align-items: cetner;
+          }
+          .main-bar__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 30px 0 30px;
+            width: 80px;
+            height: 70px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color:	orange;
+          }
+          .main-bar__icon .imgstyle {
+            font-size: 30px;
+          }
+          .main-bar__text span{
+            font-size: 20px;
+            font-weight:bold;
+          }
+          .main-bar__text span:last-child{
+            font-size: 12px;
+          }
+          
+          .main-bar__text {
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+          }
+          .main-bar__text span{
+            margin-bottom: 2px;
+          }
+          .main-bar__text span:last-child{
+            margin-top:5px;
+          }
+          
+          .sub-bar {
+            margin-top:20px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: space-around;
+          }
+          
+          .sub-bar div{
+            border: 1px solid black;
+            box-shadow: 0px 2px;
+          }
+          .sub-bar__btn__play {
+            display: flex;
+            width: 80px;
+            height: 40px;
+            justify-content: center;
+            align-items:center;
+            border-radius: 8px;
+          }
+          .sub-bar__btn__play i{
+            margin-right:5px;
+            font-size:8px;
+          }
+          .sub-bar__btn__play span{
+            font-weight: bold;
+          }
+          .sub-bar .circle {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items:center;
+          }
+          
+          .choosecolor-bar {
+            margin-top: 20px;
+          }
+          .choosecolor-bar .square{
+            width:40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 8px;
+          }
+          .choosecolor-bar__content {
+            display: flex;
+            margin: 25px;
+            flex-direction: row;
+          }
+          .choosecolor-bar__content__text {
+            display: flex;
+            flex-direction: column;
+            margin: 2px 2px 2px 5px;
+          }
+          .choosecolor-bar__content__text span{
+            font-size: 15px;
+            font-weight: bold;
+          }
+          .choosecolor-bar__content__text span:last-child{
+            font-size: 10px;
+            margin-top:5px;
+          }
+          
+          .choosecolor-bar__color__red {
+            background-color: red;
+          }
+          .choosecolor-bar__color__pink {
+            background-color: pink;
+          }
+          .choosecolor-bar__color__blue {
+            background-color: blue;
+          }
+          .choosecolor-bar__color__mint {
+            background-color: mediumturquoise;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="content-box">
+      <div class="status-bar">
+        <i class="fas fa-times"></i>
+        <span>Playlist</span>
+      </div>   
+
+      <div class="main-bar">
+        <div class="main-bar__icon">
+          <i class="far fa-image imgstyle"></i>
+        </div>
+        <div class="main-bar__text">
+          <span>Random</span>
+          <span>Love</span>
+          <span>by Divay Kapoor</span>
+        </div>
+      </div>
+
+      <div class="sub-bar">
+        <div class="sub-bar__btn__play">
+          <i class="fas fa-play"></i>
+          <span>Play</span>
+        </div>
+        <div class="sub-bar__btn__heart circle">
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="sub-bar__btn__plus circle">
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+
+      <div class="choosecolor-bar">
+        <div class="choosecolor-bar__content">
+          <div class="choosecolor-bar__color__red square"></div>
+          <div class="choosecolor-bar__content__text">
+            <span>Matargasti</span>
+            <span>Mohit Chauhan</span>
+          </div>
+        </div>
+
+        <div class="choosecolor-bar__content">
+          <div class="choosecolor-bar__color__pink square"></div>
+          <div class="choosecolor-bar__content__text">
+            <span>Attitude</span>
+            <span>Lewis OfMan Attitude</span>
+          </div>
+        </div>
+
+        <div class="choosecolor-bar__content">
+          <div class="choosecolor-bar__color__blue square"></div>
+          <div class="choosecolor-bar__content__text">
+            <span>Try Everthing</span>
+            <span>Shakira Zootopia</span>
+          </div>
+        </div>
+        
+        <div class="choosecolor-bar__content">
+          <div class="choosecolor-bar__color__mint square"></div>
+          <div class="choosecolor-bar__content__text">
+            <span>Sunflower</span>
+            <span>Joseph Vincent Sunflower</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

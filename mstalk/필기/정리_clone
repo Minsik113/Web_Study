@@ -1,0 +1,21 @@
+★카카오톡 느낌의 html + css만들기
+
+★BEM(block element modifier) 구글링해서 css를 좀 더 읽기 쉽게 하는 규칙임.
+ex)
+<a class="btn btn--big btn--orange" href="~~~">
+    <span class="btn__price">~~</span>
+    <span class="btn__text">~~</span>
+</a>
+a는 버튼이고 버튼을 크게해주고 오랜지색이다.
+글고 안에는 btn__price와 btn__text가 있다.
+
+★ heroicons, fontawesome
+icon을 무료 or 유료로 얻을 수 있음  
+
+★ script코드는 body태그를 닫기 바로 전에 선언해야한다. 즉 맨뒤에 선언.
+<script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+
+★ googlefont
+폰트를 얻을 수 있음
+
+

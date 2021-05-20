@@ -18,4 +18,9 @@ icon을 무료 or 유료로 얻을 수 있음
 ★ googlefont
 폰트를 얻을 수 있음
 
+★ reset css
+html이 기본적으로 제공하는 속성값 중 원하지 않는 값이 있을 수 있기때문에 reset.css를 style.css맨위에 선언한다.
+
+
+
 

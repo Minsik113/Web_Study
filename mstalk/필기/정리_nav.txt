@@ -1,0 +1,14 @@
+★ nav>ul>li*4>a
+여기에서 tab만누르면 딱 원하는곳으로 계속 이동한다.
+<nav>
+    <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+</nav>
+
+★ box-sizing:border-box;
+
+★★★

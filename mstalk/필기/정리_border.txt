@@ -1,0 +1,21 @@
+★ box-sizing: border-box;
+전체200에서 50패딩+150content가 아니라 200content를 유지한상태로 왼쪽에 50만큼 더 늘어나서 250이되게된다.
+-> padding을 주고 싶은데 box사이즈가 그대로 있기를 원하는데 밀리는 현상이 생긴다.
+box{
+    width:400px;
+}
+box__content{
+    width:200px;
+    padding-left:20px;
+}
+이를 해결하기 위해 아래처럼 해야한다. box사이즈를 늘리는 것을 원하지 않는다는 의미임.
+box__content{
+    width:200px;
+    padding-left:20px;
+    box-sizing:border-box; 
+}
+
+★
+
+
+
